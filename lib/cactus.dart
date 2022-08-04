@@ -10,28 +10,28 @@ import 'sprite.dart';
 List<Sprite> CACTI = [
   Sprite()
     ..imagePath = "assets/images/cacti/cacti_group.png"
-    ..imageWidth = 104
-    ..imageHeight = 100,
+    ..imageWidth = 52
+    ..imageHeight = 50,
   Sprite()
     ..imagePath = "assets/images/cacti/cacti_large_1.png"
-    ..imageWidth = 50
-    ..imageHeight = 100,
+    ..imageWidth = 25
+    ..imageHeight = 50,
   Sprite()
     ..imagePath = "assets/images/cacti/cacti_large_2.png"
-    ..imageWidth = 98
-    ..imageHeight = 100,
+    ..imageWidth = 47
+    ..imageHeight = 50,
   Sprite()
     ..imagePath = "assets/images/cacti/cacti_small_1.png"
-    ..imageWidth = 34
-    ..imageHeight = 70,
+    ..imageWidth = 17
+    ..imageHeight = 35,
   Sprite()
     ..imagePath = "assets/images/cacti/cacti_small_2.png"
-    ..imageWidth = 68
-    ..imageHeight = 70,
+    ..imageWidth = 34
+    ..imageHeight = 35,
   Sprite()
     ..imagePath = "assets/images/cacti/cacti_small_3.png"
-    ..imageWidth = 107
-    ..imageHeight = 70,
+    ..imageWidth = 54
+    ..imageHeight = 35,
 ];
 
 class Cactus extends GameObject {

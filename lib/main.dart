@@ -60,6 +60,8 @@ class _MyHomePageState extends State<MyHomePage>
     Cloud(worldLocation: Offset(350, -10)),
   ];
 
+  get score => runDistance.round();
+
   @override
   void initState() {
     super.initState();
@@ -135,7 +137,9 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
-    List<Widget> children = [];
+    List<Widget> children = [
+      // Text("Score: $runDistance"),
+    ];
 
     for (GameObject object in [...clouds, ...ground, ...cacti, dino]) {
       children.add(AnimatedBuilder(
@@ -154,9 +158,10 @@ class _MyHomePageState extends State<MyHomePage>
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Score: $score"),
       ),
-      body: GestureDetector(
+      body:
+      GestureDetector(
         behavior: HitTestBehavior.translucent,
         onTap: () {
           dino.jump();
